@@ -1,9 +1,9 @@
 FROM python:3.6
 
-ADD . /usr/src/personal-blog
-WORKDIR /usr/src/personal-blog
+ADD . /usr/src/flask-app
+WORKDIR /usr/src/flask-app
 
-LABEL Name=Personal-Blog Version=0.0.1
+LABEL Name=flask-app Version=0.0.1
 EXPOSE 5000
 
 RUN python -m pip install -r requirements.txt
